@@ -1,0 +1,102 @@
+.modal-main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    .modal1{
+        margin-bottom: 20px;
+        text-align: center;
+        font-size:xx-large;
+        font-weight: 1000;
+
+    }
+    .modal2{
+        margin: 20px auto;
+        text-align: center;
+        .modal2-button{
+            width: 40%;
+            background-color: transparent;
+            border-radius: 40px;
+            border-color: black;
+        }
+        .text{
+            color: black;
+            font-weight: 500;
+            margin: auto 4px;
+        }
+    }
+    .modal3{
+        margin: 20px auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .modal3 > span{
+        position: relative;
+        display: inline-block;
+    }
+    .modal3 > span:before, .modal3 > span:after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: 1px solid;
+        width: 100vw;
+        margin: 0 20px;
+    }
+
+    .modal3 > span:before{
+        right: 100%;
+    }
+    .modal3 > span:after{
+        left: 100%;
+    }
+    .modal4{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        .modal4-child{
+            text-align: center;
+            margin: 25px auto;
+           .input{
+                width: 50%;
+                border: 1px solid black;
+                border-radius: 3px;
+                height: 40px;
+           }
+        }
+    }
+    .modal5{
+        text-align: center;
+        margin: auto auto;
+        .modal5-text{
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+    .modal6{
+        text-align: center;
+        margin: 20px auto;
+        .modal6-button{
+            width: 40%;
+            border-radius: 40px;
+        }
+    }
+    .modal7{
+        text-align: center;
+        margin: auto 150px;
+        .modal7-text{
+            font-size: small; 
+        }
+    }
+    .modal8{
+        text-align: center;
+        margin: 30px auto;
+        .modal8-text{
+            font-weight: 400;
+        }
+        .modal8-link{
+            font-weight: 600;
+            margin: auto 5px
+        }
+    }
+}
