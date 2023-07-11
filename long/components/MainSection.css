@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Main Section CSS */
+.main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  background-color: #fff;
+  max-width: 960px;
+  margin: auto;
+}
+
+.teacher--info__container {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  min-width: 350px;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.teacher--info__container a {
+  color: #131313;
+}
+
+.teacher--rating__container {
+  display: flex;
+}
+
+#teacher--rating__content {
+  font-size: 60px;
+  margin-right: 11px;
+  font-weight: 900;
+}
+
+.rating--counter__container {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.teacher--name {
+  font-size: 40px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.teacher--department {
+  max-width: 350px;
+  padding-bottom: 24px;
+}
+
+.teacher--department a {
+  font-weight: bold;
+}
+
+#teacher--rating__description {
+  color: rgb(152, 152, 152);
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  top: 15px;
+}
+
+.take--again--difficulty__container {
+  display: flex;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.take--again--difficulty__container > :nth-child(1) {
+  padding: 0px 12px 16px 0px;
+  margin-bottom: 4px;
+}
+
+.take--again--difficulty__container > :nth-child(2) {
+  padding: 0px 0px 16px 12px;
+  margin-bottom: 4px;
+  border-left: 1px solid #131313;
+}
+
+.take--again--difficulty__content {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.take--again--difficulty__description {
+  font-size: 14px;
+}
+
+.rate__btn {
+  display: flex;
+  min-width: 220px;
+  width: fit-content;
+  background: rgb(0, 85, 253);
+  padding: 11px 46px;
+  border: 1px solid rgb(0, 33, 255);
+  border-radius: 100px;
+}
+
+.rate__btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.professor--correction__container {
+  display: flex;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+.professor--correction__container a {
+  font-weight: bold;
+}
+
+.professor--correction__container > :nth-child(1) {
+  padding-right: 12px;
+}
+
+.professor--correction__container > :nth-child(2) {
+  border-left: 1px solid #131313;
+  padding-left: 12px;
+}
+
+.teacher--tags__header {
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.teacher-tags__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teacher-tags__content span {
+  background-color: rgb(241, 241, 241);
+  border-radius: 14.5px;
+  margin: 0px 16px 8px 0px;
+  padding: 8px 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.rating--distribution__img--container {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 20px 20px;
+}
+
+.rating--distribution__img--container img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.similar--teachers__container {
+  padding: 20px 20px;
+}
+
+.similar--teachers__header {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.similar--teachers__content {
+  display: flex;
+  background-color: rgba(217, 232, 255, 0.61);
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 100%;
+}
+
+.similar--teachers__content li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.similar--teachers__content a {
+  color:#131313;
+  text-decoration: none;
+}
+
+.similar--teachers__link {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+.similar--teachers__score {
+  background: rgb(0, 85, 253);
+  padding: 10px 7px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.similar--teachers__score:hover {
+  background-color: blue;
+}
+
+.similar-teachers__name {
+  padding-left: 10px;
+}
+
+.similar-teachers__name:hover {
+  color: blue;
+}
+
+.student--ratings__counter {
+  border-bottom: 2px solid #131313;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.student--ratings__counter a {
+  font-size: 14px;
+  font-weight: 600;
+  list-style: none;
+  color: #131313;
+  text-decoration: none;
+}
+
+/* Student's Comments Section */
+.student--ratings__list {
+  list-style: none;
+}
+
+.student--ratings__items {
+  background: #f8f8f8;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.student--rating--comment__container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.courses_btn {
+  background: #fff;
+  padding: 7px 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.courses_btn a {
+  text-decoration: none;
+  color: #131313;
+  font-weight: 800;
+}
+
+.student--rating--comment__content {
+  display: flex;
+}
+
+.student--rating__container {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.student--rating--quality__container, .student--rating--difficulty__container {
+  padding: 20px 0 0 20px;
+}
+
+.student--rating--quality__header, .student--rating--difficulty__header {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.student--rating--quality__content {
+  align-self: center;
+  background: rgb(255, 241, 112);
+  height: 64px;
+  line-height: 36px;
+  margin-bottom: 8px;
+  padding: 14px 10px;
+  width: 72px;
+  font-size: 32px;
+  font-weight: 900;
+  margin-left: 7px;
+}
+
+.student--rating--difficulty__content {
+  align-self: center;
+  background: rgb(228, 228, 228);
+  height: 64px;
+  line-height: 36px;
+  margin-bottom: 8px;
+  padding: 14px 10px;
+  width: 72px;
+  font-size: 32px;
+  font-weight: 900;
+  margin-left: 7px;
+}
+
+.student--crn--date_container {
+  font-weight: bold;
+  padding: 20px 30px;
+}
+
+.student--rating--crn {
+  float: left;
+  font-weight: 900;
+}
+.student--rating--date {
+  float: right;
+}
+
+.student--rating--notes {
+  clear: both;
+  display: flex;
+  padding: 30px 30px;
+}
+
+.student--rating--comment {
+  padding: 0px 30px 30px 30px;
+}
+
+.student--rating--notes div {
+  padding-right: 10px;
+}
+
+.student--rating--notes span {
+  font-weight: bold;
+}
+
+.student--rating--keyword {
+  padding-left: 30px;
+}
+
+.student--rating--keyword span {
+  background-color: rgb(241, 241, 241);
+  border-radius: 14.5px;
+  font-stretch: condensed;
+  margin: 0px 16px 8px 0px;
+  padding: 8px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: HelveticaNeue, arial;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  
+} 
