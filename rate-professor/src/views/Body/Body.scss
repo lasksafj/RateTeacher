@@ -1,0 +1,195 @@
+
+.body1{
+    margin: 100px auto;
+}
+
+.body-child1{
+    .img{
+        margin: auto auto;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+}
+
+.body-child2{
+    font-weight: 600;
+    font-size:xx-large;
+    margin: 20px auto;
+}
+
+.body-child3{
+    position: relative;
+
+    .input{
+        width: 500px;
+        border-radius: 40px;
+        height: 50px;
+        margin: 20px auto;
+    }
+    
+    .body-child-child{
+        margin-bottom: 60px;
+
+        .link{
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: large;
+            margin-bottom: 60px;
+        }
+    }
+    
+}
+
+.body-child4{
+    height: 10px;
+}
+
+.body-text1{
+    color: black;
+    font-size: 0.4in;
+    font-weight: 800;
+}
+
+.body-text2{
+    color:black;
+    font-size: 0.4in;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.body3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .body2-child1{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        .pic{
+            width: 400px;
+            height:400px
+        }
+        .pic-text{
+            color: black;
+            font-size: 0.3in;
+            font-weight: 600;
+        }
+    }
+    .body2-child2{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        .pic{
+            width: 400px;
+            height:400px
+        }
+        .pic-text{
+            color: black;
+            font-size: 0.3in;
+            font-weight: 600;
+        }
+    }
+}
+
+.body4{
+    margin-top: 60px;
+
+    .signup{
+        width: 200px;
+        height:50px;
+        background-color: black;
+        border-color: black;
+        margin-bottom: 100px;
+        
+    }
+    .signup:hover{
+        transform: scale(1.05);
+    }
+}
+
+.help{
+    position: fixed;
+    bottom: 9rem;
+    left: 1rem;
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border: 2px;
+    border-radius: 20px;
+}
+
+.frame{
+    width: 360px;
+    height: 570px;
+    z-index: 1;
+    position: fixed;;
+    left: 5rem;
+    top: 5rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    border-radius: 5px;
+    .frame-header{
+        color: black;
+        text-align: center;
+        .header-title{
+            font-size: medium;
+            font-weight: bold;
+        }
+    }
+    .frame-body{
+        width:98%;
+        height: 90%;
+        overflow-y: auto;
+        background-color: white;
+        text-align: center;
+        margin: auto auto;
+        .frame-body-child{
+            background-color: rgb(248, 247, 246);
+            border-radius: 4px;
+            margin: auto 4px;
+            .title{
+                font-size: small;
+                text-align: start;
+                margin-left: 5px;
+                color: blue;
+                font-weight: bold;
+            }
+            .content{
+                font-size: small;
+                text-align: start;
+                margin-left: 5px;
+                color: black;
+
+            }
+        }
+        .frame-body-child:hover{
+            cursor: pointer;
+            transform: scale(1.02) perspective(1px);
+            box-shadow: 10px 10px 50px 1px grey;
+        }
+    }
+
+        .chatbox{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            font-size: large;
+            border-color: transparent;
+            height:max-content
+        }
+        .chatbox::placeholder{
+            font-size: small;
+            text-align: start;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
